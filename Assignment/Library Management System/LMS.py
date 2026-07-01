@@ -4,6 +4,7 @@ while(True):
   print("2.Search the book ")
   print("3.Issue book ")
   print("4.Return book ")
+  print("5. Views all books ")
   print("5.Exit ")
   choice=int(input("Enter the Choice : "))
   
@@ -33,8 +34,14 @@ while(True):
           print(book)
           break
       if not flag:
-        print("Book not found ")  
+        print("Book not found ")
+    case 3:
+      print("\n-------------------ISSUE BOOK-------------------------------\n")
+      issue=input("Enter the book you want to issued : ")
+      for book in books
+
+
   
     case _:
       print("Invalid Choice ")
-  print("\nThank you for using my LLMS :)\n")
+  print("\nThank you for using my LMS :)\n")
