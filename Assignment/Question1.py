@@ -14,11 +14,8 @@ with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\data.txt", "r
                 "marks":[int(m1),int(m2),int(m3)],
                 "avg":(int(m1)+int(m2)+int(m3))/3
 
+
                 }
-            
-            
-            
-        
             if User_name == data["Name"]:
               print(f"Rollno of {data['Name']} is {data['Rollno']}")
               print(f"Name is ",data["Name"])

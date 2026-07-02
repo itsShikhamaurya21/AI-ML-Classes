@@ -1,0 +1,11 @@
+101,Python Programming,Guido van Rossum,499,Available
+102,Java: The Complete Reference,Herbert Schildt,850,Issued
+103,Learning JavaScript,Ethan Brown,650,Available
+104,HTML and CSS,Jon Duckett,700,Available
+105,React Explained,Zac Gordon,799,Issued
+106,Database System Concepts,Abraham Silberschatz,1200,Available
+107,Operating System Concepts,Abraham Silberschatz,999,Available
+108,Computer Networks,Andrew S. Tanenbaum,950,Issued
+109,Data Structures and Algorithms in Java,Robert Lafore,899,Available
+110,Artificial Intelligence,Stuart Russell,1500,Available111,Drawing,Shikha,200,Available
+112,Database,Gl,600',available

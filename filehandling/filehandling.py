@@ -56,7 +56,7 @@ with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\demo.text","r
 #     line_no+=1
 # Write a fuction to seacrh a word in particular file
 # write a program to update student marks of a file using roll no
-# write a  program for the given file to store each student info in dictionary and returns a list of dictionary which includes the stats of the student
+
 # create a small project of library management system that includes add book,search book, borrow and return book 
 # data={}
 # with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\data.txt","r") as f:
@@ -66,38 +66,6 @@ with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\demo.text","r
 # print(data)
 
 # data = {}
-# User_name=input("Enter the name ")
-# with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\data.txt", "r") as f:
-#     for line in f:
-#         if line: 
-#             roll,name,m1,m2,m3=line.split(",")
-#             data={
-#                 "Rollno":roll,
-#                 "Name":name,
-#                 "Marks1":int(m1),
-#                 "Marks2":int(m2),
-#                 "Marks3":int(m3),
-#                 "marks":[int(m1),int(m2),int(m3)],
-#                 "avg":(int(m1)+int(m2)+int(m3))/3
-
-#                 }
-            
-            
-            
-        
-#             if User_name == data["Name"]:
-#               print(f"Rollno of {data['Name']} is {data['Rollno']}")
-#               print(f"Name is ",data["Name"])
-#               print(f"Hindi marks of {data['Name']} is ",data["Marks1"])
-#               print(f"Math marks of {data['Name']} is ",data["Marks2"])
-#               print(f"English marks of {data['Name']} is ",data["Marks3"])
-#               print(f"Highest marks of {data['Name']} is", max(data["marks"]))
-#               print(f"Average marks of {data['Name']} is", data["avg"])
-            
-              
-            
-
-# print(data)
 
  
 
@@ -105,16 +73,7 @@ with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\demo.text","r
 # import os 
 # os.remove(file_name)
  
-# Search a word in a particular file
-word=input("Enter the word :")
-flag=False
-with open("C:\\Users\\sahil\\Desktop\\AI-ML classes\\filehandling\\data.txt", "r") as file:
-   for line in file:
-      if word in line:
-         flag=True
-         print("Found",line.strip())
-if flag==False:
-   print("Not found")
+
 
 
 
