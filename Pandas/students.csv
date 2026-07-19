@@ -1,0 +1,11 @@
+StudentID,Name,Age,Gender,Course,Marks,City
+101,Shikha,22,Female,Python,85,Noida
+102,Sahil,21,Male,Java,78,Delhi
+103,Shital,32,Female,Python,92,Ghaziabad
+104,Rohan,23,Male,C++,67,Noida
+105,Priya,24,Female,Java,88,Delhi
+106,Amit,22,Male,Python,75,Greater Noida
+107,Neha,23,Female,C++,81,Ghaziabad
+108,Raj,25,Male,Java,69,Delhi
+109,Anjali,21,Female,Python,95,Noida
+110,Vikas,24,Male,C++,72,Greater Noida
