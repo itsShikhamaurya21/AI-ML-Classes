@@ -65,4 +65,97 @@ print(arr2)
 print(type(arr2))
 print(arr.astype(float))
 
-print(np.random,rand(2,3))
+# print(np.random,rand(2,3))
+
+
+# View and copy
+# Copy --- make a new array/ not affect the original array
+arr=np.array([1,2,3,4,5])
+x=arr.copy()
+arr[0]=21
+
+print(arr)
+print(x)
+
+# view --- make changes in original array-- it affect the original array
+
+arr=np.array([1,2,3,4,5,6,7])
+x=arr.view()
+arr[0]=21
+print(arr)  
+print(x)  #store the original arr into it
+
+# Every NumPy array has the attribute base that returns None if the array owns the data.
+
+arr = np.array([1, 2, 3, 4, 5])
+
+x = arr.copy()
+y = arr.view()
+
+print(x.base)
+print(y.base)
+
+# reshape --- 1-D to any type of D
+
+arr=np.array([1,2,3,4,4,5,5,7,6,6,6,8])
+newarr=arr.reshape(3,4)
+print(newarr)
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+newarr = arr.reshape(2, -1)
+print(newarr)
+
+arr=np.array([[1,2,3,4],[5,7,8,9]])
+print(arr.reshape(-1))
+
+
+# loop
+arr=np.array([[1,2,3,4],[5,6,7,8]])
+
+for x in arr:
+  for y in x:
+    print(y)
+
+for x in np.nditer(arr):
+  print(x)
+
+for idx,x in np.ndenumerate(arr):
+  print(idx,x)
+
+# join two 1D array
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([4, 5, 6])
+arr = np.concatenate((arr1, arr2))
+
+print(arr)
+
+# join two 2 D array
+
+arr1 = np.array([[1, 2], [3, 4]])
+arr2 = np.array([[5, 6], [7, 8]])
+arr=np.concatenate((arr1,arr2),axis=1)   # axis -1 column axis 
+print(arr)
+
+# spliting the array
+
+arr = np.array([1, 2, 3, 4, 5])
+newarr = np.array_split(arr, 3)
+print(newarr)
+
+# where-- for searching 
+
+x=np.where(arr==4)
+print(x)
+
+# searchsorted
+
+x=np.searchsorted(arr,4)
+print(x)
+
+# filter array
+
+arr=np.array([41,42,43,44])
+filter_arr=arr>42
+newarr=arr[filter_arr]
+print(filter_arr)
+print(newarr)
