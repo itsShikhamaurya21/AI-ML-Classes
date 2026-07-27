@@ -1,0 +1,17 @@
+PANDAS 
+it is the  python library that is used to anyzing the data, cleaning and explaining and manipulating the data 
+
+pandas ----- "panel data" and "python data analysis" was created by Wes Mckinney in 2008
+
+why we use?
+pandas allws to analyze big dat and make conclusions based on statstical theories 
+
+What Can Pandas Do?
+Pandas gives you answers about the data. Like:
+
+Is there a correlation between two or more columns?
+What is average value?
+Max value?
+Min value?
+
+--------------------------------------------------
