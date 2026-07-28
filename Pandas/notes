@@ -15,3 +15,130 @@ Max value?
 Min value?
 
 --------------------------------------------------
+
+Series:
+A pandas series is like a column in a table 
+it is one dimensional array data structure that hold any type.
+
+in this values are labeled with their index number. index will be start with 0
+
+custom label :
+by using index keyword 
+
+--------------------------------------------------
+
+DataFrame :
+Data set are usually in multi dimensional called dataframes
+
+Series is like a column and dataframe is like a whole table 
+
+
+loc: to return one or more specified row
+when you want to give the custom index use index keyword
+
+how to read the csv file --- df = pd.read_csv('data.csv')
+
+1. csv (comma seperated values )file -- it contains plain text and seperated with commas or  big data sets 
+
+2. Read Json 
+JSON is a plain text in which it includes key values format data 
+df = pd.read_json('data.json')
+it contains the data llike python dictioneries 
+
+----------------------------------------------------
+
+Analyzing Data frames 
+
+viewing the data -
+head()--- by default it takes first 5 rows 
+head(10)--- first 10 rows 
+
+tail() --- by default it takes last 5 rows 
+tail(10) -- last 10 rows 
+
+info() --- return all about the data 
+
+--------------------------------------------------
+
+cleaning the data
+
+data cleaning 
+data cleaning means fixing bad data in your data set 
+bad data could be :
+empty cells
+Data in wrong format 
+wrong data
+Duplicates
+
+A. 1. empty cells - Empty cells can potentially give you a wrong result when you analyze data.
+
+remove rows = by remove rows --- use dropna() --- to remove the empty rows
+ dropna(inplace=True) // remove all rows with NULL values 
+
+ 2. Replace Empty values 
+ use fillna(130,inplace=true) // it fills the null values with 130 values 
+
+ 3. Replace using MEAN , MEDIAN , MODE 
+
+ x = df["Calories"].mean()//median()//mode()
+
+df.fillna({"Calories": x}, inplace=True)4
+
+B. 1. cleaning data of Wrong format 
+
+To fix it, you have two options: remove the rows, or convert all cells in the columns into the same format.
+
+how to covert the data into datetime
+use to_datetime()
+
+C. 1. Fixing Wrong data 
+by replacing it to right value using loc it is for the small datasets 
+for the large datasets ---- create some rules , condition 
+Another method is to remove the wrong data 
+
+D. 1. Removing Duplicates 
+to checkm that duplicates value present or not then use duplicated()
+for removing this we use , drop_duplicates(inplace=True)
+
+inplace=true means the method does not return a new dataframe, but it will remove all deuplicates from the original dataframe 
+
+
+----------------------------------------------------------------------
+Data corrrelations 
+1. finding relationships - 
+a great aspect of the pandas module is the corr() method
+
+A corr() method is used to calcultes the relationship between the each columns 
+
+the number varies from -1 to 1
+1 means that there is a 1 to 1 relationship 
+0.9 is also a god relationship means if you increse the one value , the other will also increase (it is the mean of the +ve correlation)
+-0.9 is also good relationship as 0.9 but if we increase the value of any by 1 , other will probably decrease.
+0.2 is not good relationship
+
+What is a good correlation? It depends on the use, but I think it is safe to say you have to have at least 0.6 (or -0.6) to call it a good correlation.
+
+-------------------------------------------------------------------------
+Pandas plotting
+
+plotting -- 
+use plot() method to create diagrams 
+for this we must import matplotlib.pyplot as plt to plot the diagram 
+
+1. scatter plot- it needs x and y- axis  
+specify using kind argument
+
+e.g - import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv('data.csv')
+
+df.plot(kind = 'scatter', x = 'Duration', y = 'Calories')
+
+plt.show()
+
+2. Histogram 
+use kind = hist 
+a histogram needs only one column 
+it shows the frequency of each interval
+
